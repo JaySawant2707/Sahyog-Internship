@@ -15,6 +15,8 @@ import App8_StylingApproaches from "./App8_StylingApproaches.jsx";
 import App9_ErrorBoundary from "./App9_ErrorBoundary.jsx";
 import App10_StateManagement from "./App10_StateManagement.jsx";
 import Canteen from "./Redux/Canteen.jsx";
+import AxiosUsers from "./AxiosUsers.jsx";
+import FetchUsers from "./FetchUsers.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -30,7 +32,9 @@ createRoot(document.getElementById("root")).render(
       {/* <App8_StylingApproaches/> */}
       {/* <App9_ErrorBoundary /> */}
       {/* <App10_StateManagement /> */}
-      <Canteen />
+      {/* <Canteen /> */}
+      <AxiosUsers />
+      <FetchUsers />
     </StrictMode>
   </Provider>
 );

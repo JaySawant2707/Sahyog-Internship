@@ -1,5 +1,5 @@
-import { error } from "console";
 import { useState } from "react";
+import axios from "axios";
 
 export default function AxiosUsers() {
   const [usersData, setUsersData] = useState([]);

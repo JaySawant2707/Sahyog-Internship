@@ -59,7 +59,15 @@ export default function FetchUsers() {
             border: "1px solid #ddd",
           }}
         >
-
+          <p>
+            <strong>Name</strong> {user.username}
+          </p>
+          <p>
+            <strong>Email</strong> {user.email}
+          </p>
+          <p>
+            <strong>Phone</strong> {user.phone}
+          </p>
         </div>;
       })}
     </div>
