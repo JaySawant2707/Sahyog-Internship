@@ -50,17 +50,17 @@ export default function FetchUsers() {
       {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
 
       {/*SHOW USERS*/}
-      {usersData.map((user) => {
+      {usersData.map((user) => (
         <div
           key={user.id}
           style={{
             marginTop: "10px",
             padding: "10px",
-            border: "1px solid #ddd",
+            border: "4px solid #ddd",
           }}
         >
           <p>
-            <strong>Name</strong> {user.username}
+            <strong>Name</strong> {user.name}
           </p>
           <p>
             <strong>Email</strong> {user.email}
@@ -68,8 +68,8 @@ export default function FetchUsers() {
           <p>
             <strong>Phone</strong> {user.phone}
           </p>
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 }
