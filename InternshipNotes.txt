@@ -1,0 +1,123 @@
+npm create vite@latest my-first-project
+
+cd my-first-project
+
+then select type which is react
+
+language select javascript
+
+npm install
+
+npm run dev
+
+========================================
+
+Promise = A future result - comes after some time
+Resolve = Success of the Promise
+reject = Failure of the Promise
+.then() = Runs after success (resolve)
+.catch() = Tuns after a failure(reject)
+async = Makes a function capable of using await
+await = Stops and waiting until the Promise finishes
+try/catch = Error handling with async/await
+
+=========================================
+
+core modules (build in) you get them free inside node.js
+Ex.
+fs => file system
+http => create server 
+path => work with file paths
+os => operating system info
+
+==========================================
+
+synchronous (blocking)
+tasks run one after another
+next task waits until current task finishes
+slower for large applications 
+
+analogy:
+standing in a single queue at a bank .
+if one person takes 10 minutes everyone waits.
+
+Asynchronous (Non blocking)
+long tasks run in the background 
+program continues executing other tasks
+faster and efficient 
+
+analogy:
+token system in a bank
+you submit your form and wait, but others are served meanwhile. 
+
+node.js mainly follows asynchronous programming
+
+=============================================
+
+Types of operations fs module can perform
+read files
+write files
+append data to files
+delete files
+create folders
+remove folders
+check if a file exists
+read directory
+
+=======================================
+
+HTTP 
+Definition:
+The HTTP Module in Node.js is a built in modules that allows node.js to create web servers and handle HTTP requests and responses
+
+HTTP module importance
+
+-every web app works on the request response model:
+client sends a request (browser, mobile app)
+server processes it 
+server sends back a response
+
+-node.js uses the http module to:
+act as a web server
+receive request
+send responses
+
+without the http module:
+node.js could not host websites or APIs
+
+======================================
+
+-client
+browser or app
+sends http request
+waits for response
+
+-server
+node.js app
+receives request
+processes data
+
+-this communication happens using:
+HTTP methods (GET,POST,PUT,DELETE)
+Status codes (200,404,500)
+Headers and body
+
+======================================
+
+GET = request data (read)
+POST = send data (create)
+PUT = update data
+DELETE = remove data
+
+-real-life analogy:
+get = view product
+post = place order
+put = update adddress
+delete = cancel order
+
+200 = success
+201 = created
+400 = bad request
+401 = unauthorized
+404 = not found
+500 = server error 
